@@ -1,38 +1,68 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+.home-logo{
+  border-radius: 2rem;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 0px 8px #00a8cc;
+  font-family: 'Bellota Text', cursive;
+  font-family: 'Bellota', cursive;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: lightblue;
+  opacity: 0.75;
+  border-color: linen;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .fadeOut {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+} */
+
+.fadeOut {
+  animation: fadeOut ease 8s;
+  -webkit-animation: fadeOut ease 8s;
+  -moz-animation: fadeOut ease 8s;
+  -o-animation: fadeOut ease 8s;
+  -ms-animation: fadeOut ease 8s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.body:before {
+  content: '';
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1536867520774-5b4f2628a69b?ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  -webkit-background-size: cover; 
+  -moz-filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-size: cover;
+
+}
+
+.main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: space-evenly;
 }
