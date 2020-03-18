@@ -4,10 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router} from 'react-router-dom'
+import Footer from './components/FooterPages/Footer'
+import Nav from './components/NavigationPages/Nav'
+
 
 ReactDOM.render(
 <Router> 
+<Nav />,
 <App /> 
+<Footer />,
 </Router>,
 document.getElementById('root'));
 
