@@ -8,7 +8,7 @@ export default class Email extends React.Component {
     
     render() {
         return(
-            <Link to='/email'>Email us!</Link>
+          <h1>Hello</h1>
         )
     }
 }

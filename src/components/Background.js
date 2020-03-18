@@ -1,33 +1,29 @@
 import React from 'react'
-import HomeLogo from './HomeLogo'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+// import HomeLogo from './HomeLogo'
+// import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import {Redirect} from 'react-router'
 
-export default class Main extends React.Component {
-        
+export default function Background(props)  {
+    console.log(props)
+       
     
-    // state = {
-    //     visible: true 
-    // }
-    
+
     // handleClick = () => {
-    //     this.setState({
-    //         visible: false
-    //     })
-    //     this.showMain()
-    // }
-    
-    render(){
-        return(
+    //     // this.setState({click: true})
+    //     // if(this.state.click == true) {
+    //    return  <Redirect to='/main'/>
+    // } 
+
         
+    return(
         
         <div className= 'body'>
-            <HomeLogo/> 
-            {/* <Redirect to='/' /> */}
-            {/* handleClick={this.handleClick} visible={this.state.visible} */}
+             <button onClick={() => props.history.push('/home')} type='button' className= 'home-logo'>
+                <h1>Judith's Barley Bags</h1>
+                <p>Welcome, click to enter</p>
+            </button>
         </div>
         
-        
-        )
-    }
-}
+    )
+ 
+}  
