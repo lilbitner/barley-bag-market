@@ -1,5 +1,7 @@
 import React from 'react'
 import Judy from './Judy.jpg'
+import BarleyBag1 from './BarleyBag1.jpeg'
+import BarleyBag2 from './BarleyBag2.jpeg'
 
 
 
@@ -9,23 +11,20 @@ export default class Body extends React.Component {
     
     render() {
         return(
+            <>
             <div className='barley-basics'>
-                <div className='barley-description'>
-                    <h2 id ='what-is-barley-bag'>
-                        What is a Barley Bag? 
-                    </h2>
-                    <p id='what-is-description'> 
-                        A Barley Bag is a personal bag filled with barley straight from the store to warm or cool you as needed. 
-                    </p>
-                    <ul id='purpose-list'>
-                    What you can do with it? 
-                            <li>Heat it in the microwave to act as a warming pad for sore muscles, or to squeeze on a cold winter day.</li>
-                            <li>Place the bag in the fridge to create a cold pack for sore muscles, or to squeeze on a warm summer day.</li>
-                    </ul>
-                    
-                </div>
+                <img src={BarleyBag1} alt='Bag' id='Barley-bag1' />
                 <img src={Judy} alt='Judy' id='judy-picture'/>
+                <img src={BarleyBag2} alt='Bag' id='Barley-bag2' />
+              
+
             </div>
+            <div className="testimonials">
+                  <h3>"I tweaked my back Friday morning and on Friday night used my new Barley Bag and I was good as new on Saturday" - Brian Firooz</h3>
+                  <h3>"Judith's Barley Bag is the best thing that ever happened to me - I heat it up 20 times a day" - Rachel Emmer</h3>
+            </div>
+            </>
+        
         )
     }
 }

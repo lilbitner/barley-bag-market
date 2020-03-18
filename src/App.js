@@ -9,6 +9,8 @@ import Quiz from './components/NavigationPages/Quiz'
 import Shop from './components/NavigationPages/Shop'
 import Careers from './components/FooterPages/Careers'
 import Email from './components/FooterPages/Email'
+import Nav from './components/NavigationPages/Nav'
+import Footer from './components/FooterPages/Footer'
 
 class App extends React.Component {
   
@@ -20,7 +22,7 @@ class App extends React.Component {
     return (
         <div className="App">
           <Switch>
-        
+       
           <Route exact path='/' component={Background}/>
           <Route exact path='/home' component={Main}/>
           <Route exact path='/home/aboutBarleyBags' component={AboutBarleyBags} />
@@ -29,7 +31,7 @@ class App extends React.Component {
           <Route exact path='/home/Quiz' component={Quiz} />  
           <Route exact path='/Careers' component={Careers} />
           <Route exact path='/Email' component={Email} /> 
-           
+        
         </Switch> 
         </div>
     );
