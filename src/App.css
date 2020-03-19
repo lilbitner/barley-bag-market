@@ -83,7 +83,12 @@ h1#welcome {
 a {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
+  color: white;
   
+}
+
+li:onclick {
+  color: white;
 }
 
 ul {
@@ -141,7 +146,7 @@ ul {
   align-items: center;
   justify-content: space-evenly;
   background-color: #00a8cc ;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   height: 2.5rem;
@@ -153,3 +158,80 @@ ul {
   font-family: 'Bellota', cursive;
  
 }
+
+
+#shop-title {
+  font-family: 'Bellota Text', cursive;
+  font-family: 'Bellota', cursive;
+  text-align: center;
+}
+
+#step1 {
+  font-family: 'Bellota Text', cursive;
+  font-family: 'Bellota', cursive;
+  text-align: center;
+}
+
+.fabricimage {
+  
+}
+
+.dropdown {
+  font-family: 'Bellota Text', cursive;
+  font-family: 'Bellota', cursive;
+  text-align: center;
+}
+
+#fabric-input {
+  font-family: 'Bellota Text', cursive;
+  font-family: 'Bellota', cursive;
+  border: solid;
+  border-color:  #00a8cc ;
+}
+
+.sizeContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#size1, #size2, #size3 {
+  height: 200px;
+  width: 200px;
+  border: solid;
+  border-color: #00a8cc;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 10px;
+}
+
+
+
+
+/* #sizebutton {
+  border: solid;
+  border-color: #00a8cc;
+  box-shadow: 0px 0px 8px gray;
+  display: flex;
+  /* height: 100px;
+  width: 100px; */
+
+  figcaption {
+    text-align: center;
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+  }
+
+  #favor-input {
+    border: solid;
+    border-color: #00a8cc;
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+  }
+
+
+  #submitOrder {
+    text-align: center;
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    border: solid;
+    border-color: #00a8cc ;
+  }
