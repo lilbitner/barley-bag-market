@@ -1,7 +1,7 @@
 import React from 'react'
-import Judy from './Judy.jpg'
-import BarleyBag1 from './BarleyBag1.jpeg'
-import BarleyBag2 from './BarleyBag2.jpeg'
+import Judy from './Images/Judy.jpg'
+import BarleyBag1 from './Images/BarleyBag1.jpeg'
+import BarleyBag2 from './Images/BarleyBag2.jpeg'
 
 
 

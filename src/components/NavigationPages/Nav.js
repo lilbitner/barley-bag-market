@@ -10,7 +10,7 @@ export default class Nav extends React.Component {
         return(
             <nav className = 'nav'>
                 <h1 id='welcome'>Welcome to Judith's Barley Bags!</h1>
-                 <ul>
+                 <ul className='navMenu'>
                     <li>
                         <NavLink to='/home/aboutBarleyBags' exact>About Barley Bags</NavLink>
                     </li>
