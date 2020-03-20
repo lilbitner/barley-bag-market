@@ -10,9 +10,12 @@ import SpringFlowers from '../Images/SpringFlowers.jpeg'
 import Green from '../Images/Green.jpeg'
 import Dalmatian from '../Images/Dalmatian.jpeg'
 import WorkTy from '../Images/WorkTy.jpeg'
+import LavaLamp from '../Images/LavaLamp.jpeg'
+import SeaFoam from '../Images/Seafoam.jpeg'
 import SmallSize from '../Images/SmallSize.jpeg'
 import LongSize from '../Images/LongSize.jpeg'
 import MediumSize from '../Images/MediumSize.jpeg'
+import StrongPrint from '../Images/StrongPrint.jpeg'
 
 
  
@@ -55,7 +58,18 @@ export default class DemoCarousel extends Component {
                     <img className='fabricimage' src={WorkTy} />
                     <p className="legend">Classic</p>
                 </div>
-                
+                <div>
+                    <img className='fabricimage' src={LavaLamp} />
+                    <p className="legend">LavaLamp</p>
+                </div>
+                <div>
+                    <img className='fabricimage' src={SeaFoam} />
+                    <p className="legend">SeaFoam</p>
+                </div>
+                <div>
+                    <img className='fabricimage' src={StrongPrint} />
+                    <p className="legend">StrongPrint</p>
+                </div>
                 
             </Carousel>
         );
