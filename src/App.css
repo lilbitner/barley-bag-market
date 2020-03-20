@@ -173,7 +173,6 @@ ul {
 }
 
 .fabricimage {
-  
 }
 
 .dropdown {
@@ -235,3 +234,8 @@ ul {
     border: solid;
     border-color: #00a8cc ;
   }
+
+  /* #inputs {
+    display: flex;
+    
+  } */

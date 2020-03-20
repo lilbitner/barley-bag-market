@@ -33,7 +33,7 @@ class App extends React.Component {
       }).then(response => {
       if (response.status == 200) 
       {let created = document.createElement('h3')
-      created.textContent = "Your bag has been submitted!"
+      created.textContent = "Your order has been submitted, Judith will be in touch with you shortly!"
       const form = document.querySelector('#form')
       form.appendChild(created)}
     })

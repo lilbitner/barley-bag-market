@@ -11,7 +11,9 @@ export default class Shop extends React.Component {
     state= {
         fabric: '',
         size: '',
-        favor: ''
+        favor: '',
+        title: '',
+        email:''
     }
 
     handleChange = (event) => {
@@ -76,8 +78,15 @@ export default class Shop extends React.Component {
                     </select>
                 </div>
                 <div className='dropdown'>
-                    <h3>What act of kindess will you do for someone in exchange for this bag?</h3>
-                    <input id='favor-input' type='text' name='favor' value={this.state.favor} onChange={this.handleChange} placeholder='Act of Kindess' />
+                    <h3>Step 3: What act of kindess will you do for someone in exchange for this bag?</h3>
+                        <input id='favor-input' type='text' name='favor' value={this.state.favor} onChange={this.handleChange} placeholder='Act of Kindess' />
+                </div>
+                <div className='dropdown'>
+                    <h3>Step 4: Submit Order</h3>
+                    <input id='favor-input' type='text' name='title' value={this.state.title} onChange={this.handleChange} placeholder='Name' />
+                    <br></br>
+                    <input id='favor-input' type='text' name='email' value={this.state.email} onChange={this.handleChange} placeholder='Email' />
+                    <br></br>
                     <input id='submitOrder' type='submit'/>
                 </div>
             </form>
