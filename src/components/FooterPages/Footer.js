@@ -6,8 +6,6 @@ import {NavLink} from 'react-router-dom'
 
 export default function Footer() {
 
-
-
     return(
         <div className='footer'>
             <NavLink to='/Email' exact>Contact Us</NavLink>

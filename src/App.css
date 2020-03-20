@@ -52,7 +52,7 @@ main {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-image: url(IMG_9976.jpeg);
+  background-image: url(HomeLogoImage.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed; 
@@ -67,14 +67,20 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: nowrap;
   background-color: #00a8cc;
   border: solid;
+  height: 4rem;
   border-width: .5rem;
   border-color: white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0!important;
 }
 
-h1#welcome {
+#welcome {
   font-size: 30px;
+  flex-wrap: nowrap;
   color: white;
   font-family: 'Bellota Text', cursive;
   font-family: 'Bellota', cursive;
@@ -87,6 +93,28 @@ a {
   
 }
 
+.navMenu {
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-left: 3rem; */
+}
+
+li {
+  border: solid;
+  font-size: 12px;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 2px;
+  margin-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  box-shadow: 0px 0px 8px gray;
+  text-align: center;
+  background-color: teal;
+}
+
 li:onclick {
   color: white;
 }
@@ -97,11 +125,24 @@ ul {
 
 .barley-basics {
   display: flex;
+  margin-top: -20px;
   justify-content: flex-end;
+  background-image: url(sewing.jpg);
+  height: 600px;
+  background-size: cover;
+  background-attachment: fixed; 
+  -webkit-background-size: cover; 
+  background-repeat: no-repeat;
   padding-right: .5rem;
   justify-content: space-evenly;
-  
+  display: block;
+  border: solid;
+  border-width: .5rem;
+  border-color: white;
+
 }
+
+
 
 #judy-picture {
   height: 200px;
@@ -112,33 +153,18 @@ ul {
   box-shadow: 0px 0px 8px;
 }
 
-#Barley-bag1 {
-  height: 200px;
-  width: 200px;
-  border-radius: 1rem;
-  border: solid;
-  border-color: lightskyblue;
-  box-shadow: 0px 0px 8px;
-}
 
-#Barley-bag2 {
-  height: 200px;
-  width: 200px;
-  border-radius: 1rem;
-  border: solid;
-  border-color: lightskyblue;
-  box-shadow: 0px 0px 8px;
-}
 
 .testimonials {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
+  position: relative;
+  overflow: hidden;
   font-size: 13px;
   font-family: 'Bellota Text', cursive;
   font-family: 'Bellota', cursive;
 }
-
 
 .footer {
   display: flex;
@@ -148,7 +174,7 @@ ul {
   background-color: #00a8cc ;
   /* position: absolute; */
   bottom: 0;
-  width: 100%;
+  width: 99%;
   height: 2.5rem;
   border: solid;
   border-width: .5rem;
@@ -173,6 +199,7 @@ ul {
 }
 
 .fabricimage {
+  width: 100%;
 }
 
 .dropdown {
@@ -203,39 +230,42 @@ ul {
 }
 
 
-
-
-/* #sizebutton {
-  border: solid;
-  border-color: #00a8cc;
-  box-shadow: 0px 0px 8px gray;
-  display: flex;
-  /* height: 100px;
-  width: 100px; */
-
-  figcaption {
+figcaption {
     text-align: center;
     font-family: 'Bellota Text', cursive;
     font-family: 'Bellota', cursive;
-  }
+}
 
-  #favor-input {
+#favor-input {
     border: solid;
     border-color: #00a8cc;
     font-family: 'Bellota Text', cursive;
     font-family: 'Bellota', cursive;
-  }
+}
 
 
-  #submitOrder {
+#submitOrder {
     text-align: center;
     font-family: 'Bellota Text', cursive;
     font-family: 'Bellota', cursive;
     border: solid;
     border-color: #00a8cc ;
-  }
+}
 
-  /* #inputs {
-    display: flex;
-    
-  } */
+
+#submissionMessage {
+    text-align: center;
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+}
+
+#refreshButton button {
+    margin: auto;
+    text-align: center;
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    border: solid;
+    border-color: #00a8cc ;
+}
+
+  

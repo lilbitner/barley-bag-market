@@ -31,9 +31,6 @@ export default class Shop extends React.Component {
         this.props.addBag(this.state)
     }
 
-   
-   
-   
     render() {
         return(
             <>
