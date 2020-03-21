@@ -76,14 +76,18 @@ main {
   margin: 0;
   padding: 0;
   margin-bottom: 0!important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #welcome {
-  font-size: 30px;
+  font-size: 35px;
+  font-style: bold;
   flex-wrap: nowrap;
   color: white;
   font-family: 'Bellota Text', cursive;
   font-family: 'Bellota', cursive;
+  text-align: center;
 }
 
 a {
@@ -99,7 +103,7 @@ a {
   /* margin-left: 3rem; */
 }
 
-li {
+#navButton {
   border: solid;
   font-size: 12px;
   border-radius: 5px;
@@ -115,6 +119,10 @@ li {
   background-color: teal;
 }
 
+#navButton:hover {
+  box-shadow: 0 8px 16px white;
+}
+
 li:onclick {
   color: white;
 }
@@ -124,9 +132,9 @@ ul {
 }
 
 .barley-basics {
-  display: flex;
+  /* display: flex; */
   margin-top: -20px;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   background-image: url(sewing.jpg);
   height: 600px;
   background-size: cover;
@@ -134,11 +142,12 @@ ul {
   -webkit-background-size: cover; 
   background-repeat: no-repeat;
   padding-right: .5rem;
-  justify-content: space-evenly;
-  display: block;
+  /* justify-content: space-evenly; */
+  /* display: block; */
   border: solid;
   border-width: .5rem;
   border-color: white;
+  opacity: 0.8;
 
 }
 
@@ -268,4 +277,30 @@ figcaption {
     border-color: #00a8cc ;
 }
 
+.card {
+  box-shadow: 0px 4px 8px gray;
+  transition: 0.3s;
+  width: 200px;
+  font-family: 'Bellota Text', cursive;
+  font-family: 'Bellota', cursive;
+  /* opacity: 0.75; */
+  margin-left: 3rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  border: solid;
+  background-color: teal;
+  color: white;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+
+}
+
+#barleybaguselist {
+  list-style: square;
+}
+
+.card:hover {
+  box-shadow: 0 12px 20px gray;
+}
   

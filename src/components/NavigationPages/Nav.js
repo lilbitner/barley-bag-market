@@ -17,13 +17,13 @@ export default class Nav extends React.Component  {
             <nav className = 'nav'>
                 <NavLink to='/home' id='welcome'>Judith's Barley Bags</NavLink>
                  <ul className='navMenu'>
-                    <li>
+                    <li id='navButton'>
                         <NavLink to='/home/aboutBarleyBags' exact onMouseOver={this.handleMouseIn.bind(this)} onMouseOut={this.handleMouseOut.bind(this)}>About Barley Bags</NavLink>
                     </li>
-                    <li>
+                    <li id='navButton'>
                         <NavLink to='/home/Shop' exact>Shop Barley Bags</NavLink>
                     </li>
-                    <li>
+                    <li id='navButton'>
                         <NavLink to='/home/Quiz' exact>Find your perfect Barley Bag Quiz</NavLink>
                     </li>
                 </ul>
