@@ -50,6 +50,7 @@ main {
 .body:before {
   content: '';
   position: fixed;
+  margin-top: -1rem;
   width: 100vw;
   height: 100vh;
   background-image: url(HomeLogoImage.jpeg);
@@ -68,6 +69,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: nowrap;
+  position: relative;
   background-color: #00a8cc;
   border: solid;
   height: 4rem;
@@ -132,7 +134,7 @@ ul {
 }
 
 .barley-basics {
-  /* display: flex; */
+  display: flex;
   margin-top: -20px;
   /* justify-content: flex-end; */
   background-image: url(sewing.jpg);
@@ -181,7 +183,7 @@ ul {
   align-items: center;
   justify-content: space-evenly;
   background-color: #00a8cc ;
-  /* position: absolute; */
+  /* position: relative; */
   bottom: 0;
   width: 99%;
   height: 2.5rem;
@@ -281,6 +283,7 @@ figcaption {
   box-shadow: 0px 4px 8px gray;
   transition: 0.3s;
   width: 200px;
+  height: 550px;
   font-family: 'Bellota Text', cursive;
   font-family: 'Bellota', cursive;
   /* opacity: 0.75; */
@@ -303,4 +306,50 @@ figcaption {
 .card:hover {
   box-shadow: 0 12px 20px gray;
 }
+
+.testimonialCard {
+  box-shadow: 0px 4px 8px gray;
+  transition: 0.3s;
+  width: 200px;
+  height: 350px;
+  font-family: 'Bellota Text', cursive;
+  font-family: 'Bellota', cursive;
+   opacity: 0.75; 
+  margin-left: 3rem;
+  /* margin-top: 1rem; */
+  font-size: 15px;
+  height: 300px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  border: solid;
+  background-color: teal;
+  color: white;
+  padding-right: 1rem;
+  padding-left: 1rem;
+} 
+
+.reviewForm {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-left: 3rem;
+  border: solid;
+  border-color: #00a8cc ;
+  box-shadow: 0px 0px 8px gray;
+  padding: 1rem 1rem;
+  font-family: 'Bellota Text', cursive;
+  font-family: 'Bellota', cursive;
+}
+
+ #reviewContent, #title, #submit  {
+  border: solid;
+  border-color:teal;
+}
+
+#reviewContent {
+  height: 100px;
+  word-wrap: break-word;
+    word-break: break-all;
+}
+
   
