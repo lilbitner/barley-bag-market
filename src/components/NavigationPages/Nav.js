@@ -13,12 +13,13 @@ export default class Nav extends React.Component  {
 
        
     render() {
+        if(window.location.pathname == '/home' || '/home/Shop' || '/home/aboutBarleyBags' || '/home/Quiz' || 'home/Contact' || 'home/Careers' ) 
         return(
             <nav className = 'nav'>
                 <NavLink to='/home' id='welcome'>Judith's Barley Bags</NavLink>
                  <ul className='navMenu'>
                     <li id='navButton'>
-                        <NavLink to='/home/aboutBarleyBags' exact onMouseOver={this.handleMouseIn.bind(this)} onMouseOut={this.handleMouseOut.bind(this)}>About Barley Bags</NavLink>
+                        <NavLink to='/home/aboutBarleyBags' exact onMouseOver={this.handleMouseIn.bind(this)} onMouseOut={this.handleMouseOut.bind(this)}>Barley Bag Testimonials</NavLink>
                     </li>
                     <li id='navButton'>
                         <NavLink to='/home/Shop' exact>Shop Barley Bags</NavLink>

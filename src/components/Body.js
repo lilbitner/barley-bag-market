@@ -27,6 +27,10 @@ export default class Body extends React.Component {
                     <h5>Simply pop in the microwave for 2-21/2 minutes for heat and place in your freezer
                          for 20 minutes for cold therapy.  Repeat as needed throughout the day or night!</h5>
                </div>
+               {/* <div className='testimonialCard'>
+                <h3>"I tweaked my back Friday morning and on Friday night used my new Barley Bag and I was good as new on Saturday" - Brian Firooz</h3>
+                  <h3>"Judith's Barley Bag is the best thing that ever happened to me - I heat it up 20 times a day" - Rachel Emmer</h3>
+               </div> */}
                 {/* <img src={Judy} alt='Judy' id='judy-picture'/> */}
 
                

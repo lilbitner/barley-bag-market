@@ -3,6 +3,7 @@ import Carousel from './Carousel'
 import SmallSize from '../Images/SmallSize.jpeg'
 import LongSize from '../Images/LongSize.jpeg'
 import MediumSize from '../Images/MediumSize.jpeg'
+import FabricDropDown from './FabricDropDown'
 // import Carousel from 'react-bootstrap/Carousel'
 
 export default class Shop extends React.Component {
@@ -39,6 +40,7 @@ export default class Shop extends React.Component {
             <Carousel />
             <form id='form' onSubmit={this.handleSubmit}> 
                 <div className='dropdown'>
+                    {/* <FabricDropDown /> */}
                     <h4>Select your fabric</h4>
                     <select id='fabric-input' name='fabric' value={this.state.fabric} placeholder='Fabric Selection' onChange={this.handleChange}>
                         <option value='Orange'>OrangeTastic</option>
