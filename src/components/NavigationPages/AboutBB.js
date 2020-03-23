@@ -1,38 +1,72 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import ReviewCard from './Reviewcard'
+import Riley from '../Images/Riley.jpeg'
 
 export default class AboutBB extends React.Component {
 
     state = {
-        reviews: [{description: 'hello', star: 3}]
+        description: '', 
+        title: ''
     }
-    
-    card = () => {
-       return this.state.reviews.map(review => {
-           return <ReviewCard review={review} />
+
+    // componentDidMount() {
+    //     if(this.props.id) {
+    //         const {id, title, description} = this.props 
+    //       this.setState({id, title, description})  
+    //     }
+    // }
+
+    handleChange = (event) => {
+        let {name, value} = event.target 
+        this.setState({
+            [name]: value
         })
     }
+
+    handleSubmit = (event) => {
+        event.preventDefault()
+        if(this.props.closeForm) {
+        this.props.closeForm(false)}
+        this.props.addReview(this.state)
+    }
+
+    reviewCard = (props) => {
+           this.props.reviews.map(review => {
+               return <ReviewCard review={review} key={review.id} />
+            })
+        }
     
     render() {
 
         return(
             <div className='reviews'>
-                <form className='reviewForm'> 
-                    
+                <form onSubmit={this.handleSubmit} className='reviewForm'> 
                     <h4>Do you like your bag?</h4>
-                    <label for='reviewContent'>Share your thoughts below:</label>
-                    <textarea id = 'reviewContent' type='text' name='description' rows='14' cols='10' wrap='soft' />
-                    <label for='title'>Name</label>
-                    <input id= 'title' type='text' name='title' placeholder='Name'/> 
+                    <label htmlFor='reviewContent'>Share your thoughts below:</label>
+                    <textarea id = 'reviewContent' type='text' name='description' rows='14' cols='10' wrap='soft' value={this.state.description} onChange={this.handleChange} />
+                    <label htmlFor='title'>Name:</label>
+                    <input id= 'title' type='text' name='title' placeholder='Name' value={this.state.title} onChange={this.handleChange}/> 
                     <br></br>
-                    <input id='submit' type='submit'/>
+                    <input id='submitReview' type='submit'/>
                 </form>
-                {/* {this.card()} */}
-                {/* <div className='testimonialCard'>
+                {/* <div className='cardContainer'>
+                    {this.reviewCard()}
+                </div> */}
+                <figure> 
+                <img id ='Riley' src={Riley} />
+                <figcaption>Riley loves them too!</figcaption>
+                </figure>
+                <div className='testimonialCard'>
+                        <h1>Verified Reviews</h1>
                         <h3>"I tweaked my back Friday morning and on Friday night used my new Barley Bag and I was good as new on Saturday" - Brian Firooz</h3>
                         <h3>"Judith's Barley Bag is the best thing that ever happened to me - I heat it up to 20 times a day" - Rachel Emmer</h3>
-                </div>  */}
+                        <h3>"I heat this up right away when I wake-up, and right before I go to bed - it is a staple in my routine now and I love it!' -Lillian Bitner</h3>
+                </div> 
+                {/* <figure> 
+                <img id ='Riley' src={Riley} />
+                <figcaption>Riley loves them too!</figcaption>
+                </figure> */}
             </div>
         )
     }

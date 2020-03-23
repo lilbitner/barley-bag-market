@@ -1,15 +1,11 @@
 import React from 'react'
 
-export default class Card extends React.Component {
+export default function Card(props)  {
     
-
-    render() {
         return(
             <div className='reviewCard'>
                 <h3>{this.props.review.description}</h3>
-                <h3>{this.props.review.star}</h3>
-                {/* <img>{this.props.image}</img> */}
+                <h3>{this.props.review.title}</h3>
             </div>
         )
-    }
 }
