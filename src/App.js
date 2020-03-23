@@ -10,11 +10,13 @@ import Careers from './components/FooterPages/Careers'
 import Email from './components/FooterPages/Email'
 import Nav from './components/NavigationPages/Nav'
 import Footer from './components/FooterPages/Footer'
+import ReviewCard from './components/NavigationPages/Reviewcard'
 
 class App extends React.Component {
   
   state = {
-    bags: []
+    bags: [],
+    reviews: [{description: 'hello', title: 'hello'}]
   }
 
   createMessage = () => {
@@ -56,6 +58,19 @@ class App extends React.Component {
        })
   }
 
+addReview = (newReview) => {
+    this.setState({
+      reviews: [...this.state.reviews, {...newReview}]
+    })
+  
+    // fetch('http://localhost:3000/api/v1/todos', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify(newReview)
+    // })
+  }
   
   render() {
     return (
@@ -64,7 +79,7 @@ class App extends React.Component {
        
           <Route exact path='/' component={Background}/>
           <Route exact path='/home' component={Main}/>
-          <Route exact path='/home/aboutBarleyBags' component={AboutBarleyBags} />  
+    <Route exact path='/home/aboutBarleyBags' render={(props) => <AboutBarleyBags addReview={this.addReview} reviews={this.state.reviews} />} />  
           <Route exact path='/home/Shop' render={(props) => <Shop addBag={this.addBag} bags={this.state.bags} />} /> 
           <Route exact path='/home/Quiz' component={Quiz} />  
           <Route exact path='/Careers' component={Careers} />

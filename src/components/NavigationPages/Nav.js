@@ -1,8 +1,11 @@
 import React from 'react' 
 import {NavLink} from 'react-router-dom'
+import ReviewCard from './Reviewcard'
 
 export default class Nav extends React.Component  {
     
+    
+
     handleMouseIn() {
         this.setState({ hover: true })
       }
@@ -19,7 +22,7 @@ export default class Nav extends React.Component  {
                 <NavLink to='/home' id='welcome'>Judith's Barley Bags</NavLink>
                  <ul className='navMenu'>
                     <li id='navButton'>
-                        <NavLink to='/home/aboutBarleyBags' exact onMouseOver={this.handleMouseIn.bind(this)} onMouseOut={this.handleMouseOut.bind(this)}>Barley Bag Testimonials</NavLink>
+                        <NavLink to='/home/aboutBarleyBags' exact onMouseOver={this.handleMouseIn.bind(this)} onMouseOut={this.handleMouseOut.bind(this)}>Review your Barley Bag</NavLink>
                     </li>
                     <li id='navButton'>
                         <NavLink to='/home/Shop' exact>Shop Barley Bags</NavLink>
