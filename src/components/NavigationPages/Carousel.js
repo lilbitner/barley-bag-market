@@ -24,7 +24,7 @@ export default class DemoCarousel extends Component {
     
     render() {
         return (
-            <Carousel>
+            <Carousel width='50%'>
             
                 <div className='fabricimage'>
                     <img className='fabricimage' src={Orange} />
