@@ -3,6 +3,8 @@ import { render } from '@testing-library/react'
 import ReviewCard from './Reviewcard'
 import Riley from '../Images/Riley.jpeg'
 
+
+
 export default class AboutBB extends React.Component {
 
     state = {
@@ -32,7 +34,7 @@ export default class AboutBB extends React.Component {
     }
 
     reviewCard = (props) => {
-           this.props.reviews.map(review => {
+           return this.props.reviews.map(review => {
                return <ReviewCard review={review} key={review.id} />
             })
         }

@@ -35,9 +35,9 @@ export default class Shop extends React.Component {
     render() {
         return(
             <>
-            <h1 id='shop-title'>Costomize your own bag!</h1>
+            <h1 id='shop-title'>Customize your own bag!</h1>
             <h3 id='step1'>Step 1: Pick your fabric</h3>
-            <Carousel />
+            <Carousel/>
             <form id='form' onSubmit={this.handleSubmit}> 
                 <div className='dropdown'>
                     {/* <FabricDropDown /> */}

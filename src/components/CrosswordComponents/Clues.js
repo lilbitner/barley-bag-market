@@ -1,15 +1,21 @@
 import React from 'react'
+import Output from './Output'
 
 export default class Clues extends React.Component {
-    render() {
-    const statements = this.props.data.map(function(clues) {
+    
+    statements = this.props.data.map(clues => {
         return (
             <Output clue={clues.clue}></Output>
         );
     });
+    
+    
+    render() {
+    
+
         return(
             <div className="clueList">
-                {statements}
+                {this.statements}
             </div>
         )
     }

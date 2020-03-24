@@ -389,3 +389,7 @@ figcaption {
 #Riley:hover {
   box-shadow: 0 12px 20px gray;
 }
+
+.gameContainer {
+  width: 20rem;
+}

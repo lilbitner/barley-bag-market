@@ -4,7 +4,9 @@ import ReviewCard from './Reviewcard'
 
 export default class Nav extends React.Component  {
     
-    
+    // state = {
+    //     path: window.location.pathname
+    // }
 
     handleMouseIn() {
         this.setState({ hover: true })
@@ -14,9 +16,14 @@ export default class Nav extends React.Component  {
         this.setState({ hover: false })
       }
 
+    //   reRender() {
+    //      this.setState({path:'/home'})
+    //   }
+
        
     render() {
-        if(window.location.pathname == '/home' || '/home/Shop' || '/home/aboutBarleyBags' || '/home/Quiz' || 'home/Contact' || 'home/Careers' ) 
+        console.log(window.location.pathname)
+        if(window.location.pathname === '/'){return null}
         return(
             <nav className = 'nav'>
                 <NavLink to='/home' id='welcome'>Judith's Barley Bags</NavLink>
