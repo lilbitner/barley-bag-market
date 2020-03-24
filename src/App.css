@@ -254,6 +254,7 @@ figcaption {
     border-color: #00a8cc;
     font-family: 'Bellota Text', cursive;
     font-family: 'Bellota', cursive;
+    width: 8rem;
 }
 
 
@@ -263,6 +264,7 @@ figcaption {
     font-family: 'Bellota', cursive;
     border: solid;
     border-color: #00a8cc ;
+    width: 5rem;
 }
 
 
@@ -390,6 +392,45 @@ figcaption {
   box-shadow: 0 12px 20px gray;
 }
 
-.gameContainer {
-  width: 20rem;
+
+td  {
+  height: 20px;
+}
+
+input {
+  width: 30px;
+}
+
+.game {
+  display: flex;
+}
+
+.clueList {
+  font-size: 12px;
+  margin-right: 4rem;
+  font-family: 'Bellota Text', cursive;
+  font-family: 'Bellota', cursive;
+}
+
+.puzzle {
+  margin: auto;
+  padding-right: 10rem;
+  /* border: solid; */
+  /* box-shadow: 0px 0px 8px gray; */
+}
+
+#crosswordTitle {
+  text-align: center;
+}
+
+.checkAnswers {
+  font-family: 'Bellota Text', cursive;
+  font-family: 'Bellota', cursive;
+  box-shadow: 0px 0px 8px gray;
+  border: solid;
+  border-color:#00a8cc ;
+}
+
+.checkAnswers:hover {
+  box-shadow: 0px 8px 16px gray;
 }
