@@ -6,7 +6,7 @@ export default class Quiz extends React.Component {
         return(
             
             <>
-                <h1 id='crosswordTitle'>Crossword Puzzle</h1>
+                <h1 id='crosswordTitle'>Get to know Judith!</h1>
                 <Game />
             </>
            

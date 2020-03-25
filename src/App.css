@@ -427,6 +427,10 @@ input {
   
 }
 
+.inputBlue {
+  background-color: #00a8cc ;
+}
+
 .game {
   display: flex;
   justify-content: space-evenly;
@@ -454,6 +458,9 @@ input {
 
 #crosswordTitle {
   text-align: center;
+  font-family: 'Bellota Text', cursive;
+  font-family: 'Bellota', cursive;
+  font-size: 35px;
 }
 
 .checkAnswers {
