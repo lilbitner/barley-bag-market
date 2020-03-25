@@ -57,15 +57,15 @@ export default class Shop extends React.Component {
                 <div className='sizeContainer'>
                         <figure> 
                             <input type='image' id='size1' src={SmallSize}  alt='small' />
-                            <figcaption>Small</figcaption>
+                            <figcaption>Small(10"x10")</figcaption>
                         </figure>
                         <figure> 
                             <input type='image' id='size2' src={MediumSize} alt='medium'/>
-                            <figcaption>Medium</figcaption>
+                            <figcaption>Medium(17"x7")</figcaption>
                         </figure>
                         <figure> 
                             <input type='image' id='size3' src={LongSize} alt='long'/>
-                            <figcaption>Large</figcaption>
+                            <figcaption>Large(24"x7")</figcaption>
                         </figure>
                 </div>
                 <div className='dropdown'>
