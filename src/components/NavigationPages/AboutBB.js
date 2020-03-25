@@ -42,6 +42,8 @@ export default class AboutBB extends React.Component {
     render() {
 
         return(
+            <>
+            <h1 id='reviewTitle'>We want to hear from you!</h1>
             <div className='reviews'>
                 <form onSubmit={this.handleSubmit} className='reviewForm'> 
                     <h4>Do you like your bag?</h4>
@@ -55,21 +57,27 @@ export default class AboutBB extends React.Component {
                 {/* <div className='cardContainer'>
                     {this.reviewCard()}
                 </div> */}
-                <figure> 
+                {/* <figure> 
                 <img id ='Riley' src={Riley} />
                 <figcaption>Riley loves them too!</figcaption>
-                </figure>
+                </figure> */}
                 <div className='testimonialCard'>
                         <h1>Verified Reviews</h1>
                         <h3>"I tweaked my back Friday morning and on Friday night used my new Barley Bag and I was good as new on Saturday" - Brian Firooz</h3>
                         <h3>"Judith's Barley Bag is the best thing that ever happened to me - I heat it up to 20 times a day" - Rachel Emmer</h3>
                         <h3>"I heat this up right away when I wake-up, and right before I go to bed - it is a staple in my routine now and I love it!' -Lillian Bitner</h3>
                 </div> 
+              
                 {/* <figure> 
                 <img id ='Riley' src={Riley} />
                 <figcaption>Riley loves them too!</figcaption>
                 </figure> */}
             </div>
+             <figure className='rileyFigure'> 
+             <img id ='Riley' src={Riley} />
+             <figcaption>Riley loves them too!</figcaption>
+             </figure>
+             </>
         )
     }
 }

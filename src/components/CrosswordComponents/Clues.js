@@ -5,7 +5,7 @@ export default class Clues extends React.Component {
     
     statements = this.props.data.map(clues => {
         return (
-            <Output clue={clues.clue}></Output>
+            <Output clue={clues.clue} key={clues.clue.id} ></Output>
         );
     });
     
@@ -15,7 +15,9 @@ export default class Clues extends React.Component {
 
         return(
             <div className="clueList">
+                <h2>Clues</h2>
                 {this.statements}
+                <button className='checkAnswers' onClick={this.clickHandler}>Check Answers</button>
             </div>
         )
     }
