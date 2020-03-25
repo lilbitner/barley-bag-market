@@ -35,7 +35,7 @@ export default class Nav extends React.Component  {
                         <NavLink to='/home/Shop' exact>Shop Barley Bags</NavLink>
                     </li>
                     <li id='navButton'>
-                        <NavLink to='/home/Quiz' exact>Find your perfect Barley Bag Quiz</NavLink>
+                        <NavLink to='/home/Quiz' exact>Get to know Judith</NavLink>
                     </li>
                 </ul>
             </nav>
