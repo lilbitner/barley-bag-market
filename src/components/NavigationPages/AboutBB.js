@@ -2,6 +2,14 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import ReviewCard from './Reviewcard'
 import Riley from '../Images/Riley.jpeg'
+import Image1 from '../Images/ReviewPic1.jpeg'
+import Image2 from '../Images/ReviewPic2.jpeg'
+import Image3 from '../Images/ReviewPic3.jpeg'
+import PinkHip from '../Images/PinkHip.jpeg'
+import BlueHip from '../Images/BlueHip.jpeg'
+import BlueWhiteHip from '../Images/BlueWhiteHip.jpeg'
+import GreenHip from '../Images/GreenHip.jpeg'
+import JumbleHip from '../Images/GroupHipJumble.jpeg'
 
 
 
@@ -43,14 +51,21 @@ export default class AboutBB extends React.Component {
 
         return(
             <>
+            <figure className='bagImagesGroup'> 
+            <img className='reviewImages' src={PinkHip} alt='bag' />
+            <img className='reviewImages' src={BlueHip} alt='bag'/>
+            <img className='reviewImages' src={JumbleHip} alt='bag'/>
+            </figure>
             <h1 id='reviewTitle'>We want to hear from you!</h1>
             <div className='reviews'>
                 <form onSubmit={this.handleSubmit} className='reviewForm'> 
                     <h4>Do you like your bag?</h4>
-                    <label htmlFor='reviewContent'>Share your thoughts below:</label>
+                    <label htmlFor='reviewContent'>Please share your thoughts below:</label>
+                    <br></br>
                     <textarea id = 'reviewContent' type='text' name='description' rows='14' cols='10' wrap='soft' value={this.state.description} onChange={this.handleChange} />
+                    <br></br>
                     <label htmlFor='title'>Name:</label>
-                    <input id= 'title' type='text' name='title' placeholder='Name' value={this.state.title} onChange={this.handleChange}/> 
+                    <input id= 'title' type='text' name='title'  value={this.state.title} onChange={this.handleChange}/> 
                     <br></br>
                     <input id='submitReview' type='submit'/>
                 </form>
@@ -63,8 +78,11 @@ export default class AboutBB extends React.Component {
                 </figure> */}
                 <div className='testimonialCard'>
                         <h1>Verified Reviews</h1>
+                        <hr></hr>
                         <h3>"I tweaked my back Friday morning and on Friday night used my new Barley Bag and I was good as new on Saturday" - Brian Firooz</h3>
+                        <hr></hr>
                         <h3>"Judith's Barley Bag is the best thing that ever happened to me - I heat it up to 20 times a day" - Rachel Emmer</h3>
+                        <hr></hr>
                         <h3>"I heat this up right away when I wake-up, and right before I go to bed - it is a staple in my routine now and I love it!' -Lillian Bitner</h3>
                 </div> 
               
@@ -73,10 +91,10 @@ export default class AboutBB extends React.Component {
                 <figcaption>Riley loves them too!</figcaption>
                 </figure> */}
             </div>
-             <figure className='rileyFigure'> 
+             {/* <figure className='rileyFigure'> 
              <img id ='Riley' src={Riley} />
              <figcaption>Riley loves them too!</figcaption>
-             </figure>
+             </figure> */}
              </>
         )
     }
