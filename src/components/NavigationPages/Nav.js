@@ -5,7 +5,7 @@ import ReviewCard from './Reviewcard'
 export default class Nav extends React.Component  {
     
     // state = {
-    //     path: window.location.pathname
+    //     path: ''
     // }
 
     handleMouseIn() {

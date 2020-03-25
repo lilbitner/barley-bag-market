@@ -8,8 +8,12 @@ import JudyBags from './Images/JudyBags.jpeg'
 
 export default class Body extends React.Component {
     
-    
-    
+    state={
+        path: window.location.pathname
+    }
+    reRender() {
+        this.setState({path: window.location.pathname})
+     } 
     render() {
         return(
             <>

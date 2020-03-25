@@ -5,7 +5,15 @@ import Clues from './Clues'
 export default class Game extends React.Component{
     
     state = {
-        value: '',
+    letter1:'', letter2: '', letter3: '', letter4: '', letter5: '', letter6: '', letter7: '',
+    letter8: '', letter9: '', letter10: '', letter11: '', letter12: '', letter13: '', letter14: '', letter15:'',
+    letter16: '', letter17: '', letter18: '', letter19: '', letter20: '', letter21: '', letter22: '', letter23: '',
+    letter24: '', letter25: '', letter26: '', letter27: '', letter28: '', letter29: '', letter30: '', letter31: '',
+    letter32: '', letter33: '', letter34: '', letter35: '', letter36: '', letter37: '', letter38: '', letter39: '',
+    letter40: '', letter41: '', letter42: '', letter43: '', letter44: '', letter45: '', letter46: '', letter47: '',
+    letter48: '', letter49: '', letter50: '', letter51: '', letter52: '', letter53: '', letter54: '', letter55: '',
+    letter56: '', letter57: '', letter58: '', letter59: '', letter60: '', letter61: '', letter62: '', letter63: '',
+    letter64: '', 
         data: [
           {
             answer: 'Blue', 
@@ -59,15 +67,14 @@ export default class Game extends React.Component{
         ]
     }
     
-    handleChange = (e) => {
-        this.setState({value: e.target.value})
-     }
-    
+
+
+
     
     render(){
         return(
             <div className="game">
-                    <Puzzle handleChange={this.handleChange} />
+                    <Puzzle values={this.state.values} />
                     <Clues data={this.state.data} />
             </div> 
         )

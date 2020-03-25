@@ -3,11 +3,22 @@ import Body from './Body'
 
 
 
-export default function Main() {
+export default class Main extends React.Component {
 
     
+    state={
+        path: {}
+    }
+    reRender() {
+        this.setState({path: window.location.pathname})
+     } 
+     render() {
     return(
-            <Body />    
+        <>
+            {/* {this.reRender} */}
+            <Body />  
+            </>  
     )
+     }
     
 }

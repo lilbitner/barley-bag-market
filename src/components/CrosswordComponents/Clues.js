@@ -5,7 +5,7 @@ export default class Clues extends React.Component {
     
     statements = this.props.data.map(clues => {
         return (
-            <Output clue={clues.clue} ></Output>
+            <Output clue={clues.clue} key={clues.clue.id} ></Output>
         );
     });
     
