@@ -10,6 +10,8 @@ import BlueHip from '../Images/BlueHip.jpeg'
 import BlueWhiteHip from '../Images/BlueWhiteHip.jpeg'
 import GreenHip from '../Images/GreenHip.jpeg'
 import JumbleHip from '../Images/GroupHipJumble.jpeg'
+import Nav from './Nav'
+import Footer from '../FooterPages/Footer'
 
 
 
@@ -51,6 +53,7 @@ export default class AboutBB extends React.Component {
 
         return(
             <>
+            <Nav />
             <figure className='bagImagesGroup'> 
             <img className='reviewImages' src={PinkHip} alt='bag' />
             <img className='reviewImages' src={BlueHip} alt='bag'/>
@@ -95,6 +98,7 @@ export default class AboutBB extends React.Component {
              <img id ='Riley' src={Riley} />
              <figcaption>Riley loves them too!</figcaption>
              </figure> */}
+             <Footer />
              </>
         )
     }

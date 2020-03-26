@@ -4,6 +4,8 @@ import SmallSize from '../Images/SmallSize.jpeg'
 import LongSize from '../Images/LongSize.jpeg'
 import MediumSize from '../Images/MediumSize.jpeg'
 import FabricDropDown from './FabricDropDown'
+import Nav from './Nav'
+import Footer from '../FooterPages/Footer'
 // import Carousel from 'react-bootstrap/Carousel'
 
 export default class Shop extends React.Component {
@@ -35,6 +37,7 @@ export default class Shop extends React.Component {
     render() {
         return(
             <>
+            <Nav />
             <h1 id='shop-title'>Customize your own bag!</h1>
             <h3 id='step1'>Step 1: Pick your fabric</h3>
             <Carousel/>
@@ -91,6 +94,7 @@ export default class Shop extends React.Component {
                     <input id='submitOrder' type='submit'/>
                 </div>
             </form>
+            <Footer />
             </>
         )
     }

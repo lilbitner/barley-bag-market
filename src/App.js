@@ -83,13 +83,13 @@ addReview = (newReview) => {
         <div className="App">
           <Switch>
        
-          <Route exact path='/' component={Background}/>
-          <Route exact path='/home' component={Body}/>
-    <Route exact path='/home/aboutBarleyBags' render={(props) => <AboutBarleyBags addReview={this.addReview} reviews={this.state.reviews} />} />  
-          <Route exact path='/home/Shop' render={(props) => <Shop addBag={this.addBag} bags={this.state.bags} />} /> 
-          <Route exact path='/home/Quiz' component={Quiz} />  
-          <Route exact path='/Careers' component={Careers} />
-          <Route exact path='/Email' component={Email} /> 
+            <Route exact path='/' component={Background}/>
+            <Route exact path='/home' component={Body}/>
+            <Route exact path='/home/aboutBarleyBags' render={(props) => <AboutBarleyBags addReview={this.addReview} reviews={this.state.reviews} />} />  
+            <Route exact path='/home/Shop' render={(props) => <Shop addBag={this.addBag} bags={this.state.bags} />} /> 
+            <Route exact path='/home/Quiz' component={Quiz} />  
+            <Route exact path='/Careers' component={Careers} />
+            <Route exact path='/Email' component={Email} /> 
         
         </Switch> 
         </div>

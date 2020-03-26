@@ -10,9 +10,7 @@ import Nav from './components/NavigationPages/Nav'
 
 ReactDOM.render(
 <Router> 
-<Nav />,
 <App /> 
-<Footer />,
 </Router>,
 document.getElementById('root'));
 
