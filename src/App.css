@@ -211,6 +211,7 @@ ul {
   font-family: 'Bellota Text', cursive;
   font-family: 'Bellota', cursive;
   text-align: center;
+  font-size: 22px;;
 }
 
 .fabricimage {
@@ -228,6 +229,7 @@ ul {
   font-family: 'Bellota', cursive;
   border: solid;
   border-color:  #00a8cc ;
+  height: 1.5rem;
 }
 
 .sizeContainer {
@@ -257,6 +259,11 @@ figcaption {
     font-family: 'Bellota Text', cursive;
     font-family: 'Bellota', cursive;
     width: 8rem;
+    height: 1rem;
+}
+
+.selections {
+  font-size: 20px;
 }
 
 
@@ -274,6 +281,7 @@ figcaption {
     text-align: center;
     font-family: 'Bellota Text', cursive;
     font-family: 'Bellota', cursive;
+    justify-content: space-between;
 }
 
 #refreshButton button {
@@ -283,6 +291,11 @@ figcaption {
     font-family: 'Bellota', cursive;
     border: solid;
     border-color: #00a8cc ;
+    margin-left: 1rem;
+}
+
+#refreshButton {
+  border: none;
 }
 
 .card {
@@ -489,6 +502,7 @@ input {
 
 #title {
   width: 12rem;
+  text-align: start;
 }
 
 
