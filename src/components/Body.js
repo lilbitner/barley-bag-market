@@ -1,6 +1,8 @@
 import React from 'react'
 import Judy from './Images/Judy.jpg'
 import JudyBags from './Images/JudyBags.jpeg'
+import Nav from './NavigationPages/Nav'
+import Footer from './FooterPages/Footer'
 
 
 
@@ -8,15 +10,11 @@ import JudyBags from './Images/JudyBags.jpeg'
 
 export default class Body extends React.Component {
     
-    state={
-        path: window.location.pathname
-    }
-    reRender() {
-        this.setState({path: window.location.pathname})
-     } 
+  
     render() {
         return(
             <>
+            <Nav />
             <div className='barley-basics'>
                <div className='card'>
                    <h4>What is a barley bag?</h4>
@@ -49,6 +47,7 @@ export default class Body extends React.Component {
                   <h3>"I tweaked my back Friday morning and on Friday night used my new Barley Bag and I was good as new on Saturday" - Brian Firooz</h3>
                   <h3>"Judith's Barley Bag is the best thing that ever happened to me - I heat it up 20 times a day" - Rachel Emmer</h3>
             </div> */}
+            <Footer /> 
             </>
         
         )
