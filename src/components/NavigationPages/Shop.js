@@ -41,8 +41,9 @@ export default class Shop extends React.Component {
             <form id='form' onSubmit={this.handleSubmit}> 
                 <div className='dropdown'>
                     {/* <FabricDropDown /> */}
-                    <h4>Select your fabric</h4>
-                    <select id='fabric-input' name='fabric' value={this.state.fabric} placeholder='Fabric Selection' onChange={this.handleChange}>
+                    <h4 className='selections'>Select your fabric</h4>
+                    <select id='fabric-input' name='fabric' value={this.state.fabric}  onChange={this.handleChange}>
+                        <option value='' disabled selected hidden>Select a fabric</option>
                         <option value='Orange'>OrangeTastic</option>
                         <option value='SeaWaves'>SeaWaves</option>
                         <option value='Pink'>Bubblegum</option>
@@ -69,19 +70,20 @@ export default class Shop extends React.Component {
                         </figure>
                 </div>
                 <div className='dropdown'>
-                    <h4>Select your size</h4>
+                    <h4 className='selections'>Select your size</h4>
                     <select id='fabric-input' name='size' value={this.state.size} placeholder='Size Selection' onChange={this.handleChange}>
+                            <option value='' disabled selected hidden>Select a size</option>
                             <option value='Small'>Small</option>
                             <option value='Medium'>Medium</option>
                             <option value='Large'>Large</option>
                     </select>
                 </div>
                 <div className='dropdown'>
-                    <h3>Step 3: What act of kindess will you do for someone in exchange for this bag?</h3>
+                    <h3 id='step1'>Step 3: What act of kindess will you do for someone in exchange for this bag?</h3>
                         <input id='favor-input' type='text' name='favor' value={this.state.favor} onChange={this.handleChange} placeholder='Act of Kindess' />
                 </div>
                 <div className='dropdown'>
-                    <h3>Step 4: Submit Order</h3>
+                    <h3 id='step1'>Step 4: Submit Order</h3>
                     <input id='favor-input' type='text' name='title' value={this.state.title} onChange={this.handleChange} placeholder='Name' />
                     <br></br>
                     <input id='favor-input' type='text' name='email' value={this.state.email} onChange={this.handleChange} placeholder='Email' />
