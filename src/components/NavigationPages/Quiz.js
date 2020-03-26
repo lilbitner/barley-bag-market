@@ -2,6 +2,7 @@ import React from 'react'
 import Game from '../CrosswordComponents/Game'
 import Nav from './Nav'
 import Footer from '../FooterPages/Footer'
+import '../../styling/Crossword.css'
 
 export default class Quiz extends React.Component {
     render() {
@@ -14,7 +15,6 @@ export default class Quiz extends React.Component {
                 <Footer />
             </>
            
-        
         )
     }
 }

@@ -1,0 +1,106 @@
+#shop-title {
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    text-align: center;
+  }
+  
+  #step1 {
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    text-align: center;
+    font-size: 22px;;
+  }
+  
+  .fabricimage {
+    width: 100%;
+  }
+  
+  .dropdown {
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    text-align: center;
+  }
+  
+  #fabric-input {
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    border: solid;
+    border-color:  #00a8cc ;
+    height: 1.5rem;
+  }
+  
+  .sizeContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #size1, #size2, #size3 {
+    height: 200px;
+    width: 200px;
+    border: solid;
+    border-color: #00a8cc;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+  }
+  
+  #size1:hover, #size2:hover, #size3:hover {
+    box-shadow: 0 12px 20px gray;
+    }
+  
+  
+  
+  figcaption {
+      text-align: center;
+      font-family: 'Bellota Text', cursive;
+      font-family: 'Bellota', cursive;
+  }
+  
+  #favor-input {
+      border: solid;
+      border-color: #00a8cc;
+      font-family: 'Bellota Text', cursive;
+      font-family: 'Bellota', cursive;
+      width: 8rem;
+      height: 1rem;
+  }
+  
+  .selections {
+    font-size: 20px;
+  }
+  
+  
+  #submitOrder {
+      text-align: center;
+      font-family: 'Bellota Text', cursive;
+      font-family: 'Bellota', cursive;
+      border: solid;
+      border-color: #00a8cc ;
+      width: 5rem;
+  }
+  
+  #submitOrder:hover {
+    box-shadow: 0 12px 20px gray;
+  }
+  
+  
+  #submissionMessage {
+      text-align: center;
+      font-family: 'Bellota Text', cursive;
+      font-family: 'Bellota', cursive;
+      justify-content: space-between;
+  }
+  
+  .submissionTags {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #refreshButton {
+      margin: auto;
+      text-align: center;
+      font-family: 'Bellota Text', cursive;
+      font-family: 'Bellota', cursive;
+      border: solid;
+      border-color: #00a8cc ;
+  }
+  

@@ -5,8 +5,6 @@ import {Route, Switch, Redirect} from 'react-router-dom'
 import AboutBarleyBags from './components/NavigationPages/AboutBB'
 import Quiz from './components/NavigationPages/Quiz'
 import Shop from './components/NavigationPages/Shop'
-import Careers from './components/FooterPages/Careers'
-import Email from './components/FooterPages/Email'
 import Body from './components/Body'
 
 
@@ -88,8 +86,6 @@ class App extends React.Component {
             } 
           /> 
           <Route exact path='/home/Quiz' component={Quiz} />  
-          <Route exact path='/Careers' component={Careers} />
-          <Route exact path='/Email' component={Email} /> 
         
         </Switch> 
       </div>
