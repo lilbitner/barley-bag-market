@@ -27,10 +27,29 @@ export default class Shop extends React.Component {
     }
 
     handleSubmit = (event) => {
-        event.preventDefault()
+        event.preventDefault();
         if(this.props.closeForm) {
-        this.props.closeForm(false)}
-        this.props.addBag(this.state)
+        this.props.closeForm(false)};
+        this.props.addBag(this.state);
+        event.target.reset()
+    }
+
+    resetState = () => {
+        this.setState({
+            fabric: '', 
+            size: '',
+            favor: '', 
+            title: '', 
+            email: ''
+        })
+    }
+
+
+    handleSubmission = () => {
+        this.resetState()
+        // window.location.reload(false);
+        window.scrollTo(0,0);
+        window.location.href = window.location.href
     }
 
     render() {
@@ -95,6 +114,12 @@ export default class Shop extends React.Component {
                     <br></br>
                     <input id='submitOrder' type='submit'/>
                 </div>
+                {this.props.isOrder ?
+                    <div className='submissionTags'> 
+                        <h3 id='submissionMessage'>Your order has been submitted, Judith will be in touch with you shortly!</h3> 
+                        <button id='refreshButton' onClick={this.handleSubmission}>Submit another order</button>
+                    </div>
+                : null}
             </form>
             <Footer />
             </>

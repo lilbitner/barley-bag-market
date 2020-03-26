@@ -71,6 +71,12 @@ export default class AboutBB extends React.Component {
                     <input id= 'title' type='text' name='title'  value={this.state.title} onChange={this.handleChange}/> 
                     <br></br>
                     <input id='submitReview' type='submit'/>
+                    {this.props.isReview ?
+                    <>
+                    <h3 id='rileyFeedback'>Riley thanks you for your feedback!</h3> 
+                    <img src={Riley} id='Riley' alt="Riley" /> 
+                    </>
+                    : null}
                 </form>
                 {/* <div className='cardContainer'>
                     {this.reviewCard()}
@@ -98,6 +104,7 @@ export default class AboutBB extends React.Component {
              <img id ='Riley' src={Riley} />
              <figcaption>Riley loves them too!</figcaption>
              </figure> */}
+             {/* {this.props.isReview ? <img src={Riley} alt="Riley" /> : null} */}
              <Footer />
              </>
         )

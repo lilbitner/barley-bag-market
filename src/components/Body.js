@@ -3,6 +3,7 @@ import Judy from './Images/Judy.jpg'
 import JudyBags from './Images/JudyBags.jpeg'
 import Nav from './NavigationPages/Nav'
 import Footer from './FooterPages/Footer'
+import '../styling/BodyPage.css'
 
 
 

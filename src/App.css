@@ -36,18 +36,18 @@ main {
   -ms-animation: fadeOut ease 8s;
 }
 
-.body {
+.landingBody {
   margin: 0;
   padding: 0;
 }
 
-.body:before {
+.landingBody:before {
   content: '';
   position: fixed;
   margin-top: -1rem;
   width: 100vw;
   height: 100vh;
-  background-image: url(HomeLogoImage.jpeg);
+  background-image: url(./components//Images/HomeLogoImage.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed; 
@@ -78,7 +78,7 @@ main {
 }
 
 #welcome {
-  font-size: 35px;
+  font-size: 3vw;
   font-style: bold;
   flex-wrap: nowrap;
   color: white;
@@ -246,6 +246,11 @@ ul {
   border-radius: 10px;
 }
 
+#size1:hover, #size2:hover, #size3:hover {
+  box-shadow: 0 12px 20px gray;
+  }
+
+
 
 figcaption {
     text-align: center;
@@ -276,6 +281,10 @@ figcaption {
     width: 5rem;
 }
 
+#submitOrder:hover {
+  box-shadow: 0 12px 20px gray;
+}
+
 
 #submissionMessage {
     text-align: center;
@@ -284,19 +293,20 @@ figcaption {
     justify-content: space-between;
 }
 
-#refreshButton button {
+.submissionTags {
+  display: flex;
+  flex-direction: column;
+}
+
+#refreshButton {
     margin: auto;
     text-align: center;
     font-family: 'Bellota Text', cursive;
     font-family: 'Bellota', cursive;
     border: solid;
     border-color: #00a8cc ;
-    margin-left: 1rem;
 }
 
-#refreshButton {
-  border: none;
-}
 
 .card {
   box-shadow: 0px 4px 8px gray;
@@ -410,8 +420,12 @@ margin: auto;
   border-color:#00a8cc; */
   box-shadow: 0px 0px 8px gray;
   /* border-radius: 1rem; */
-  opacity: 0.75;
+  opacity: 0.9;
   
+}
+
+#rileyFeedback {
+  text-align: center;
 }
 
 #reviewTitle {
