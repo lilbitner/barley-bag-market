@@ -1,9 +1,8 @@
 import React from 'react'
-import Carousel from './Carousel'
+import CarouselImages from './Carousel'
 import SmallSize from '../Images/SmallSize.jpeg'
 import LongSize from '../Images/LongSize.jpeg'
 import MediumSize from '../Images/MediumSize.jpeg'
-import FabricDropDown from './FabricDropDown'
 import Nav from './Nav'
 import Footer from '../FooterPages/Footer'
 // import Carousel from 'react-bootstrap/Carousel'
@@ -40,7 +39,7 @@ export default class Shop extends React.Component {
             <Nav />
             <h1 id='shop-title'>Customize your own bag!</h1>
             <h3 id='step1'>Step 1: Pick your fabric</h3>
-            <Carousel/>
+            <CarouselImages/>
             <form id='form' onSubmit={this.handleSubmit}> 
                 <div className='dropdown'>
                     {/* <FabricDropDown /> */}
@@ -55,6 +54,9 @@ export default class Shop extends React.Component {
                         <option value='Green'>ForestFlowers</option>
                         <option value='BlackWhite'>Dalmatian</option>
                         <option value='Classic'>Classic</option>
+                        <option value='LavaLamp'>LavaLamp</option>
+                        <option value='SeaFoam'>SeaFoam</option>
+                        <option value='StrongPrint'>StrongPrint</option>
                     </select>
                 </div>
                 <h3 id='step1'>Step 2: Pick your size</h3>

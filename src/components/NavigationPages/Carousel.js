@@ -16,6 +16,7 @@ import SmallSize from '../Images/SmallSize.jpeg'
 import LongSize from '../Images/LongSize.jpeg'
 import MediumSize from '../Images/MediumSize.jpeg'
 import StrongPrint from '../Images/StrongPrint.jpeg'
+import Riley from '../Images/Riley.jpeg';
 
 
  
@@ -75,5 +76,3 @@ export default class DemoCarousel extends Component {
         );
     }
 };
- 
-// ReactDOM.render(<DemoCarousel />, document.querySelector('.demo-carousel'));
