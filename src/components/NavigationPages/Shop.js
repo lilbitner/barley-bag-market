@@ -5,6 +5,7 @@ import LongSize from '../Images/LongSize.jpeg'
 import MediumSize from '../Images/MediumSize.jpeg'
 import Nav from './Nav'
 import Footer from '../FooterPages/Footer'
+import '../../styling/ShopPage.css'
 // import Carousel from 'react-bootstrap/Carousel'
 
 export default class Shop extends React.Component {

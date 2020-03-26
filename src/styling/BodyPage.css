@@ -1,0 +1,61 @@
+.barley-basics {
+    display: flex;
+    margin-top: -20px;
+    /* justify-content: flex-end; */
+    background-image: url(../sewing.jpg);
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat;
+    padding-right: .5rem;
+    justify-content: space-between;
+    align-items: center;
+    /* display: block; */
+    border: solid;
+    border-width: .5rem;
+    border-color: white;
+    opacity: 0.8;
+}  
+
+#judy-picture {
+    height: 250px;
+    width: 200px;
+    border-radius: 1rem;
+    border: solid;
+    border-color: #00a8cc;
+    box-shadow: 0px 0px 8px;
+    margin-right: 2.5rem;
+    /* margin-left: 30rem;
+    margin-top: 6rem; */
+}
+  
+#judy-picture:hover {
+    box-shadow: 0 12px 20px gray;
+}
+
+#barleybaguselist {
+    list-style: square;
+}
+
+.card {
+    box-shadow: 0px 4px 8px gray;
+    transition: 0.3s;
+    width: 200px;
+    height: 550px;
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    /* opacity: 0.75; */
+    margin-left: 3rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    border: solid;
+    background-color: teal;
+    color: white;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 12px 20px gray;
+}

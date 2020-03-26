@@ -1,0 +1,75 @@
+td  {
+    height: 40%;
+}
+  
+input {
+    width: 65%;
+    text-align: center;
+}
+  
+.inputBlue {
+    background-color: #00a8cc ;
+}
+  
+.game {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -1rem;
+    position: relative;
+}
+  
+.clueList {
+    font-size: 12px;
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+  
+.puzzle {
+    margin: auto;
+    border: solid;
+}
+  
+#crosswordTitle {
+    text-align: center;
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    font-size: 35px;
+}
+  
+.checkAnswers {
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    box-shadow: 0px 0px 8px gray;
+    border: solid;
+    border-color:#00a8cc ;
+}
+  
+.checkAnswers:hover {
+    box-shadow: 0px 8px 16px gray;
+}
+  
+#title {
+    width: 12rem;
+    text-align: start;
+}
+  
+  
+.reviewImages {
+    width: 30%;
+    height: 30%;
+    box-shadow: 0px 0px 8px grey;
+}
+  
+.reviewImages:hover {
+    box-shadow: 0px 8px 16px gray;
+}
+  
+  
+.bagImagesGroup {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

@@ -1,6 +1,6 @@
 import React from 'react' 
 import {NavLink} from 'react-router-dom'
-import ReviewCard from './Reviewcard'
+import '../../styling/Nav.css'
 
 export default class Nav extends React.Component  {
     

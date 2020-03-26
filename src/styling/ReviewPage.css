@@ -1,0 +1,111 @@
+/* .testimonials {
+    position: relative;
+    overflow: hidden;
+    font-size: 13px;
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+  } */
+
+.testimonialCard {
+    box-shadow: 0px 4px 8px gray;
+    transition: 0.3s;
+    width: 200px;
+    height: 350px;
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    opacity: 0.75; 
+    font-size: 10px;
+    height: 300px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    margin-right: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+} 
+  
+.testimonialCard:hover {
+    box-shadow: 0 12px 20px gray;
+}
+  
+.reviewForm {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-left: 3rem;
+    box-shadow: 0px 0px 8px gray;
+    padding: 1rem 1rem;
+    padding-top: 1%;
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+  
+.reviewForm:hover {
+    box-shadow: 0 12px 20px gray;
+}
+  
+#reviewContent, #title, #submitReview  {
+    border: solid;
+    border-color:teal;
+}
+  
+#reviewContent, #title {
+    background-color: whitesmoke;
+}
+  
+#submitReview {
+  margin: auto;
+}
+  
+#submitReview:active {
+    box-shadow: 0 8px 16px gray;
+}
+  
+#reviewContent {
+    height: 100px;
+}
+  
+.reviews {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+  
+    
+#Riley {
+    height: 250px;
+    width: 200px;
+    box-shadow: 0px 0px 8px gray;
+    opacity: 0.9; 
+}
+
+#Riley:hover {
+    box-shadow: 0 12px 20px gray;
+}
+  
+  
+#rileyFeedback {
+    text-align: center;
+}
+  
+#reviewTitle {
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    text-align: center;
+}
+  
+  /* .reviewCard {
+    border: solid;
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Bellota', cursive;
+    box-shadow: 0px 0px 8px gray;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  
+  } */
+  
+  /* .rileyFigure{
+    text-align: center;
+  } */

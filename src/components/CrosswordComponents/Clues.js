@@ -12,7 +12,6 @@ export default class Clues extends React.Component {
     
     render() {
     
-
         return(
             <div className="clueList">
                 <h2>Clues</h2>
