@@ -28,8 +28,7 @@ export default class Puzzle extends React.Component {
         [name]: value.toUpperCase()})
  }
 
-// {this.state.letter1 === this.state.letterA ? className='inputBlue' : null}
-  
+
   render() {
         return(
           <>

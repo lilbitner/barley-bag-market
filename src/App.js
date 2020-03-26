@@ -11,12 +11,14 @@ import Nav from './components/NavigationPages/Nav'
 import Footer from './components/FooterPages/Footer'
 import ReviewCard from './components/NavigationPages/Reviewcard'
 import Body from './components/Body'
+import Riley from './components/Images/Riley.jpeg';
+import Seafoam from './components/Images/Seafoam.jpeg'
 
 class App extends React.Component {
   
   state = {
     bags: [],
-    reviews: [{description: 'hello', title: 'hello'}]
+    reviews: []
   }
 
   createMessage = () => {
@@ -31,11 +33,11 @@ class App extends React.Component {
     let refreshButton = document.createElement('button')
       refreshButton.id = 'refreshButton'
       refreshButton.innerHTML =  `
-      <button onClick = 'window.scrollTo(0,0); window.location.href=window.location.href;'>Submit another order</button>`
+      <button onClick = 'window.scrollTo(0,0);' 'window.location = window.location.href; return false;'>Submit another order</button>`
       const created = document.querySelector('#submissionMessage')
       created.appendChild(refreshButton)
   }
-
+  // window.location.href=window.location.href
   
   addBag = (newBag) => {
     this.setState({
@@ -52,14 +54,6 @@ class App extends React.Component {
           if (response.status == 200) 
             {this.createMessage()}
             {this.createButton()}
-    
-      // let refreshButton = document.createElement('button')
-      // refreshButton.id = 'refreshButton'
-      // refreshButton.innerHTML =  `
-      // <button onClick = 'window.scrollTo(0,0); window.location.reload();'>Submit another order</button>`
-      // const created = document.querySelector('#submissionMessage')
-      // created.appendChild(refreshButton)
-
       
        })
   }
@@ -69,13 +63,39 @@ addReview = (newReview) => {
       reviews: [...this.state.reviews, {...newReview}]
     })
   
-    // fetch('http://localhost:3000/api/v1/todos', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify(newReview)
-    // })
+    fetch('http://localhost:3000/reviews', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newReview)
+    }).then(response => {
+      if (response.status == 200) 
+        {
+          const rileyImage = document.createElement('img');
+          rileyImage.id = 'Riley' ;
+          rileyImage.src =  './Images/Riley.jpeg'
+          console.log(rileyImage.src)
+          rileyImage.alt = 'Riley'
+          const rileyCaption = document.createElement('h3')
+          rileyCaption.id = 'submissionMessage'
+          rileyCaption.textContent = 'Riley thanks you for your feedback!'
+          const form = document.querySelector('.reviewForm')
+          form.appendChild(rileyImage)
+          form.appendChild(rileyCaption)
+        } else {console.log('Lilly rocks')}
+         
+          
+          
+          
+          
+        //   let created = document.createElement('h3')
+        // created.id = "submissionMessage"
+        // created.textContent = "Your review has been submitted, Judith will be in touch with you shortly!"
+        // const form = document.querySelector('.reviewForm')
+        // form.appendChild(created)}
+   })
+    
   }
   
   render() {
