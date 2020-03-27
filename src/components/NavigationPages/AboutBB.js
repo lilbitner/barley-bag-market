@@ -52,10 +52,14 @@ export default class AboutBB extends React.Component {
                     <h4>Do you like your bag?</h4>
                     <label htmlFor='reviewContent'>Please share your thoughts below:</label>
                     <br></br>
-                    <textarea id = 'reviewContent' type='text' name='description' rows='14' cols='10' wrap='soft' value={this.state.description} onChange={this.handleChange} />
+                    <textarea id = 'reviewContent' type='text' name='description' rows='14' cols='10' wrap='soft' 
+                        value={this.state.description} onChange={this.handleChange} 
+                    />
                     <br></br>
                     <label htmlFor='title'>Name:</label>
-                    <input id= 'title' type='text' name='title'  value={this.state.title} onChange={this.handleChange}/> 
+                    <input id= 'title' type='text' name='title'  
+                        value={this.state.title} onChange={this.handleChange}
+                    /> 
                     <br></br>
                     <input id='submitReview' type='submit'/>
                     {this.props.isReview ?
@@ -77,8 +81,8 @@ export default class AboutBB extends React.Component {
                 </div> 
                
             </div>
-             <Footer />
-             </>
+            <Footer />
+            </>
         )
     }
 }

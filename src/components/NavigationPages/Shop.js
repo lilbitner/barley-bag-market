@@ -96,22 +96,30 @@ export default class Shop extends React.Component {
                 </div>
                 <div className='dropdown'>
                     <h4 className='selections'>Select your size</h4>
-                    <select id='fabric-input' name='size' value={this.state.size} placeholder='Size Selection' onChange={this.handleChange}>
-                            <option value='' disabled selected hidden>Select a size</option>
-                            <option value='Small'>Small</option>
-                            <option value='Medium'>Medium</option>
-                            <option value='Large'>Large</option>
+                    <select id='fabric-input' name='size' value={this.state.size} placeholder='Size Selection' 
+                        onChange={this.handleChange}
+                    >
+                        <option value='' disabled selected hidden>Select a size</option>
+                        <option value='Small'>Small</option>
+                        <option value='Medium'>Medium</option>
+                        <option value='Large'>Large</option>
                     </select>
                 </div>
                 <div className='dropdown'>
                     <h3 id='step1'>Step 3: What act of kindess will you do for someone in exchange for this bag?</h3>
-                        <input id='favor-input' type='text' name='favor' value={this.state.favor} onChange={this.handleChange} placeholder='Act of Kindess' />
+                        <input id='favor-input' type='text' name='favor' value={this.state.favor} 
+                            onChange={this.handleChange} placeholder='Act of Kindess' 
+                        />
                 </div>
                 <div className='dropdown'>
                     <h3 id='step1'>Step 4: Submit Order</h3>
-                    <input id='favor-input' type='text' name='title' value={this.state.title} onChange={this.handleChange} placeholder='Name' />
+                    <input id='favor-input' type='text' name='title' value={this.state.title} 
+                        onChange={this.handleChange} placeholder='Name' 
+                    />
                     <br></br>
-                    <input id='favor-input' type='text' name='email' value={this.state.email} onChange={this.handleChange} placeholder='Email' />
+                    <input id='favor-input' type='text' name='email' value={this.state.email} 
+                        onChange={this.handleChange} placeholder='Email' 
+                    />
                     <br></br>
                     <input id='submitOrder' type='submit'/>
                 </div>
