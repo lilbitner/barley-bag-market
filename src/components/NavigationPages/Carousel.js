@@ -12,11 +12,7 @@ import Dalmatian from '../Images/Dalmatian.jpeg'
 import WorkTy from '../Images/WorkTy.jpeg'
 import LavaLamp from '../Images/LavaLamp.jpeg'
 import SeaFoam from '../Images/Seafoam.jpeg'
-import SmallSize from '../Images/SmallSize.jpeg'
-import LongSize from '../Images/LongSize.jpeg'
-import MediumSize from '../Images/MediumSize.jpeg'
 import StrongPrint from '../Images/StrongPrint.jpeg'
-import Riley from '../Images/Riley.jpeg';
 
 
  

@@ -1,5 +1,4 @@
 import React from 'react'
-import {Redirect} from 'react-router'
 import '../styling/LandingPage.css'
 
 export default function Background(props)  {
