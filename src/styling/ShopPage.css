@@ -24,9 +24,11 @@
   #fabric-input {
     font-family: 'Bellota Text', cursive;
     font-family: 'Bellota', cursive;
+    font-size: 1.5vw;
     border: solid;
     border-color:  #00a8cc ;
-    height: 1.5rem;
+    height: 10vh;
+    width: 15%;
   }
   
   .sizeContainer {
@@ -35,8 +37,8 @@
   }
   
   #size1, #size2, #size3 {
-    height: 200px;
-    width: 200px;
+    height: 85%;
+    width: 100%;
     border: solid;
     border-color: #00a8cc;
     box-shadow: 0px 0px 10px gray;
@@ -60,8 +62,12 @@
       border-color: #00a8cc;
       font-family: 'Bellota Text', cursive;
       font-family: 'Bellota', cursive;
-      width: 8rem;
-      height: 1rem;
+      height: 8vh;
+      width: 25%;
+      margin-bottom: .5rem;
+      font-size: 2vh;
+      /* width: 8rem;
+      height: 1rem; */
   }
   
   .selections {

@@ -56,8 +56,8 @@ export default class AboutBB extends React.Component {
                         value={this.state.description} onChange={this.handleChange} 
                     />
                     <br></br>
-                    <label htmlFor='title'>Name:</label>
-                    <input id= 'title' type='text' name='title'  
+                    <label htmlFor='titleInput'>Name:</label>
+                    <input id= 'titleInput' type='text' name='title'  
                         value={this.state.title} onChange={this.handleChange}
                     /> 
                     <br></br>
@@ -73,11 +73,17 @@ export default class AboutBB extends React.Component {
                 <div className='testimonialCard'>
                         <h1>Verified Reviews</h1>
                         <hr></hr>
-                        <h3>"I tweaked my back Friday morning and on Friday night used my new Barley Bag and I was good as new on Saturday" - Brian Firooz</h3>
+                        <h3>"I tweaked my back Friday morning and on Friday night used 
+                            my new Barley Bag and I was good as new on Saturday" - Brian Firooz
+                        </h3>
                         <hr></hr>
-                        <h3>"Judith's Barley Bag is the best thing that ever happened to me - I heat it up to 20 times a day" - Rachel Emmer</h3>
+                        <h3>"Judith's Barley Bag is the best thing that ever happened
+                             to me - I heat it up to 20 times a day" - Rachel Emmer
+                        </h3>
                         <hr></hr>
-                        <h3>"I heat this up right away when I wake-up, and right before I go to bed - it is a staple in my routine now and I love it!' -Lillian Bitner</h3>
+                        <h3>"I heat this up right away when I wake-up, and right before I 
+                            go to bed - it is a staple in my routine now and I love it!' -Lillian Bitner
+                        </h3>
                 </div> 
                
             </div>

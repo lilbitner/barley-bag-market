@@ -62,7 +62,6 @@ export default class Shop extends React.Component {
             <CarouselImages/>
             <form id='form' onSubmit={this.handleSubmit}> 
                 <div className='dropdown'>
-                    {/* <FabricDropDown /> */}
                     <h4 className='selections'>Select your fabric</h4>
                     <select id='fabric-input' name='fabric' value={this.state.fabric}  onChange={this.handleChange}>
                         <option value='' disabled selected hidden>Select a fabric</option>
@@ -125,7 +124,9 @@ export default class Shop extends React.Component {
                 </div>
                 {this.props.isOrder ?
                     <div className='submissionTags'> 
-                        <h3 id='submissionMessage'>Your order has been submitted, Judith will be in touch with you shortly!</h3> 
+                        <h3 id='submissionMessage'>Your order has been submitted, Judith will be in 
+                            touch with you shortly!
+                        </h3> 
                         <button id='refreshButton' onClick={this.handleSubmission}>Submit another order</button>
                     </div>
                 : null}

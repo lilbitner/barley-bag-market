@@ -1,5 +1,4 @@
 import React from 'react'
-import Judy from './Images/Judy.jpg'
 import JudyBags from './Images/JudyBags.jpeg'
 import Nav from './NavigationPages/Nav'
 import Footer from './FooterPages/Footer'
@@ -14,6 +13,7 @@ export default class Body extends React.Component {
             <>
             <Nav />
             <div className='barley-basics'>
+                
                <div className='card'>
                    <h4>What is a barley bag?</h4>
                    <h5> Using one of nature’s most efficient temperature-retaining grains, 

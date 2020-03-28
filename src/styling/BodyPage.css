@@ -3,7 +3,7 @@
     margin-top: -20px;
     /* justify-content: flex-end; */
     background-image: url(../sewing.jpg);
-    height: 600px;
+    height: 100%;
     background-size: cover;
     background-attachment: fixed; 
     -webkit-background-size: cover; 
@@ -19,8 +19,8 @@
 }  
 
 #judy-picture {
-    height: 250px;
-    width: 200px;
+    height: 50vh;
+    width: 25vw;
     border-radius: 1rem;
     border: solid;
     border-color: #00a8cc;
@@ -41,12 +41,14 @@
 .card {
     box-shadow: 0px 4px 8px gray;
     transition: 0.3s;
-    width: 200px;
-    height: 550px;
+    width: 25%;
+    height: 80%;
     font-family: 'Bellota Text', cursive;
     font-family: 'Bellota', cursive;
     /* opacity: 0.75; */
     margin-left: 3rem;
+    font-size: 1.7vw;
+    margin-bottom: 2rem;
     margin-top: 2rem;
     font-weight: 700;
     border: solid;

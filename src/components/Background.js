@@ -10,8 +10,6 @@ export default function Background(props)  {
                 <h1>Judith's Barley Bags</h1>
                 <p>Welcome, click here</p>
             </button>
-        </div>
-        
+        </div>   
     )
- 
 }  

@@ -24,7 +24,7 @@ class App extends React.Component {
       bags: [...this.state.bags, {...newBag}]
     })
     
-      fetch('http://localhost:3000/bags', {
+      fetch('https://judiths-barley-bags.herokuapp.com/bags', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ class App extends React.Component {
       reviews: [...this.state.reviews, {...newReview}]
     })
   
-    fetch('http://localhost:3000/reviews', {
+    fetch('https://judiths-barley-bags.herokuapp.com/reviews', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

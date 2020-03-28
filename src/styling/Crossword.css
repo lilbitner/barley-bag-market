@@ -1,9 +1,11 @@
 td  {
     height: 40%;
+    text-align: center;
 }
   
 input {
     width: 65%;
+    margin: auto;
     text-align: center;
 }
   
@@ -16,20 +18,24 @@ input {
     justify-content: space-evenly;
     margin-top: -1rem;
     position: relative;
+    height: 80vh;
 }
   
 .clueList {
-    font-size: 12px;
+    font-size: 1.7vh;
     font-family: 'Bellota Text', cursive;
     font-family: 'Bellota', cursive;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 40vw;
 }
   
 .puzzle {
     margin: auto;
     border: solid;
+    width: 50%;
+    /* width: 60%; */
 }
   
 #crosswordTitle {
@@ -56,16 +62,6 @@ input {
     text-align: start;
 }
   
-  
-.reviewImages {
-    width: 30%;
-    height: 30%;
-    box-shadow: 0px 0px 8px grey;
-}
-  
-.reviewImages:hover {
-    box-shadow: 0px 8px 16px gray;
-}
   
   
 .bagImagesGroup {
