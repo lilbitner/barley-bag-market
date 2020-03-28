@@ -15,7 +15,7 @@
     font-family: 'Bellota', cursive;
     opacity: 0.75; 
     font-size: 1.1vw;
-    height: 70vh;
+    height: 63vh;
     margin-bottom: 1rem;
     font-weight: 700;
     margin-right: 2rem;
@@ -24,7 +24,7 @@
 }
 
 #titleInput {
-    width: 20vw;
+    width: 17vw;
     margin-right: 20%;
     text-align: start;
 }
