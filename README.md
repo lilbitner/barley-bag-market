@@ -1,68 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+README
 
-## Available Scripts
+Judith's Barley Bags
 
-In the project directory, you can run:
+A full stack web application that is a platform for Judith (my mother) to share her Barley Bag creations with friends and family.
 
-### `npm start`
+Technologies featured: 
+1. React
+2. Ruby on Rails
+3. JavaScript
+4. CSS 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Judith's Barley Bags was created as part of the Module 4 project in the Flatiron School software engineering bootcamp program.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Features:
 
-### `npm test`
+Can learn about Barley Bags and their purpose
+Can submit a custom order for several Barley Bags based on fabric choice, size, and 'act of kindness' as a form of payment
+Can submit a review of the Barley Bag product and view other verified reviews
+Can learn more about Judith through a fully functioning Crossword Puzzle
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Link to Demo Video: https://www.youtube.com/watch?v=eRKoAQ0iNxE
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Installation:
 
-### `npm run eject`
+The backend application uses 'Rails version 6.0.2.1 - Ruby 2.6.1'. Fork & Clone down repository, run $bundle install, run $rails DB:create, run $rails DB:seed, run $rails s.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The frontend application uses 'React version 16.13.0'. Fork & Clone down repository, run $npm install, and $npm start to open the application in a browser.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+How to interact with this application:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Please visit https://judiths-barley-bags.firebaseapp.com/ to interact with the webpage and order yourself a Barley Bag! The frontend repository can be found here: https://github.com/lilbitner/barley-bag-market
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The backend is hosted by Heroku https://judiths-barley-bags.herokuapp.com
 
-## Learn More
+‘GET, ‘POST’ to the endpoint $/bags
+‘GET, ‘POST’ to the endpoint $/reviews
+Rails Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+gem 'rails', gem 'bootsnap', '>= 1.4.2', require: false gem 'rack-cors' gem 'byebug' gem 'listen', '>= 3.0.5', '< 3.2' gem 'spring' gem 'spring-watcher-listen', '~> 2.0.0' gem 'tzinfo-data'
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Additional Comments:
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The Carousel property on the 'Shop Barley Bags' page is an imported package and component that is customized to Judith's Barley Bags web page. The package was installed from the following code source: https://www.npmjs.com/package/react-responsive-carousel
