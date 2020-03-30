@@ -14,27 +14,28 @@ Judith's Barley Bags was created as part of the Module 4 project in the Flatiron
 
 ## Features:
 
-Can learn about Barley Bags and their purpose
-Can submit a custom order for several Barley Bags based on fabric choice, size, and 'act of kindness' as a form of payment
-Can submit a review of the Barley Bag product and view other verified reviews
-Can learn more about Judith through a fully functioning Crossword Puzzle
+1. Can learn about Barley Bags and their purpose
+2. Can submit a custom order for several Barley Bags based on fabric choice, size, and 'act of kindness' as a form of payment
+3. Can submit a review of the Barley Bag product and view other verified reviews
+4. Can learn more about Judith through a fully functioning Crossword Puzzle
 
 ## Link to Demo Video: https://www.youtube.com/watch?v=eRKoAQ0iNxE
 
 ## Installation:
 
-The backend application uses 'Rails version 6.0.2.1 - Ruby 2.6.1'. Fork & Clone down repository, run $bundle install, run $rails DB:create, run $rails DB:seed, run $rails s.
+1. The backend application uses 'Rails version 6.0.2.1 - Ruby 2.6.1'. Fork & Clone down repository, run $bundle install, run $rails DB:create, run $rails DB:seed, run $rails s.
 
-The frontend application uses 'React version 16.13.0'. Fork & Clone down repository, run $npm install, and $npm start to open the application in a browser.
+2. The frontend application uses 'React version 16.13.0'. Fork & Clone down repository, run $npm install, and $npm start to open the application in a browser.
 
 ## How to interact with this application:
 
-Please visit https://judiths-barley-bags.firebaseapp.com/ to interact with the webpage and order yourself a Barley Bag! The frontend repository can be found here: https://github.com/lilbitner/barley-bag-market
+Please visit https://judiths-barley-bags.firebaseapp.com/ to interact with the webpage and order yourself a Barley Bag! 
+The frontend repository can be found here: https://github.com/lilbitner/barley-bag-market
 
 The backend is hosted by Heroku with the following endpoints: 
 
-‘GET, ‘POST’ to the endpoint $/bags
-‘GET, ‘POST’ to the endpoint $/reviews
+1. ‘GET, ‘POST’ to the endpoint $/bags
+2. ‘GET, ‘POST’ to the endpoint $/reviews
 
 ## Rails Dependencies
 
