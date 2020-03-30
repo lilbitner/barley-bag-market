@@ -19,7 +19,7 @@ Can submit a custom order for several Barley Bags based on fabric choice, size, 
 Can submit a review of the Barley Bag product and view other verified reviews
 Can learn more about Judith through a fully functioning Crossword Puzzle
 
-
+![Crossword](Screen Shot 2020-03-30 at 12.42.54 PM.png?raw=true) 
 
 
 Link to Demo Video: https://www.youtube.com/watch?v=eRKoAQ0iNxE
