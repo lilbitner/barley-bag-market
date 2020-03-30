@@ -30,7 +30,8 @@ Judith's Barley Bags was created as part of the Module 4 project in the Flatiron
 ## How to interact with this application:
 
 Please visit https://judiths-barley-bags.firebaseapp.com/ to interact with the webpage and order yourself a Barley Bag! 
-The frontend repository can be found here: https://github.com/lilbitner/barley-bag-market
+
+The backend repository can be found here: https://github.com/lilbitner/barley-bag-backend
 
 The backend is hosted by Heroku with the following endpoints: 
 
