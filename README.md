@@ -4,6 +4,8 @@
 
 A full stack web application that is a platform for Judith (my mother) to share her Barley Bag creations with friends and family.
 
+## Link to Demo Video: https://www.youtube.com/watch?v=eRKoAQ0iNxE
+
 ## Technologies featured: 
 1. React
 2. Ruby on Rails
@@ -16,10 +18,14 @@ Judith's Barley Bags was created as part of the Module 4 project in the Flatiron
 
 1. Can learn about Barley Bags and their purpose
 2. Can submit a custom order for several Barley Bags based on fabric choice, size, and 'act of kindness' as a form of payment
+
+![](FabricSS.png)
+
 3. Can submit a review of the Barley Bag product and view other verified reviews
 4. Can learn more about Judith through a fully functioning Crossword Puzzle
 
-## Link to Demo Video: https://www.youtube.com/watch?v=eRKoAQ0iNxE
+![](CrosswordSS.png)
+
 
 ## Installation:
 
